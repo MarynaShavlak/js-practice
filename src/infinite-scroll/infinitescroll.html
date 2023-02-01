@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="../sass/index.scss" />
+  </head>
+
+  <body>
+    <p><a href="../index.html">На главную</a></p>
+    <form class="form-inline search-form js-search-form">
+      <div class="form-group mx-sm-3 mb-2">
+        <label for="searchQuery" class="sr-only">Что ищем?</label>
+        <input
+          type="text"
+          class="form-control"
+          name="query"
+          id="searchQuery"
+          placeholder="search..."
+          autocomplete="off"
+        />
+      </div>
+      <button type="submit" class="btn btn-primary mb-2">Искать</button>
+    </form>
+
+    <ul class="articles js-articles-container"></ul>
+
+    <div id="sentinel"></div>
+
+    <script type="module" src="./infinitescroll.js"></script>
+  </body>
+</html>

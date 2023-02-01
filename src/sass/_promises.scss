@@ -1,0 +1,54 @@
+.promises__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.promises__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  
+  
+}
+.promises__item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  
+  
+}
+
+
+
+
+.promises__task {
+  display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    background-color: bisque;
+    border-radius: 15px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.task__title {
+  font-weight: 800;
+  text-align: center;
+}
+
+.promises__item {
+  background-color: burlywood;
+  border-radius: 15px;
+    border: 1px solid black;
+    padding: 10px;
+}
+.try-btn{
+  width:60px;
+  height: 30px;
+  &:hover {
+background-color: blueviolet;
+  }
+}

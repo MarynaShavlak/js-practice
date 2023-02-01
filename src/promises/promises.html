@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promises Methods</title>
+    <link rel="stylesheet" href="../sass/index.scss" />
+    <script type="module" src="promises.js"></script>
+  </head>
+  <body>
+    <p><a href="../index.html">На главную</a></p>
+    <div class="container promises__container">
+      <div class="promises__task">
+        <p class="task__title">TASK</p>
+        <p class="task">const frameworks = ['React', 'Vue', 'Angular'];</p>
+        <p class="task">
+          Зробіть 3 проміси - по одному для кожного фреймворку з масиву.
+        </p>
+        <p class="task">
+          У кожному розташована функція setTimeout із випадковою затримкою від 0
+          до 2 секунд.
+        </p>
+        <p class="task">
+          Зробити так, щоб проміси і резолвилися, і реджектилися випадково.
+        </p>
+        <p class="task">
+          Нехай кожен проміс своїм результатом повертає цю затримку та ім'я
+          фреймворку, а при помилці ще й текст помилки 'Promise error'.
+        </p>
+      </div>
+      <ul class="promises__list">
+        <li class="promises__item">
+          <p class="task__method">
+            За допомогою <b>Promise.race</b> дочекайтеся завантаження першого
+            промісу, що спрацював.
+          </p>
+          <p class="task__method">
+            Виведіть результат його роботи на екран, або виведіть результат
+            помилки
+          </p>
+          <button type="button" class="try-btn race-btn">TRY</button>
+        </li>
+        <li class="promises__item">
+          <p class="task__method">
+            За допомогою <b>Promise.all</b> отримайте масив результатів.
+          </p>
+          <p class="task__method">
+            Виведіть на екран інформацію, з якою затримкою виконався проміс для
+            кожного фреймфорка, aбо з якою затримкою зареджектився один із них
+          </p>
+          <button type="button" class="try-btn all-btn">TRY</button>
+        </li>
+        <li class="promises__item">
+          <p class="task__method">
+            За допомогою <b>Promise.allSettled </b>отримайте масив результатів.
+          </p>
+          <p class="task__method">
+            Виведіть на екран інформацію, з яким результатом виконався проміс
+            для кожного фреймфорка
+          </p>
+          <button type="button" class="try-btn allSettled-btn">TRY</button>
+        </li>
+        <li class="promises__item">
+          <p class="task__method">
+            За допомогою <b>Promise.any </b>дочекайтеся завантаження першого
+            успішного промісу
+          </p>
+          <p class="task__method">
+            Виведіть результат роботи цього промісу на екран
+          </p>
+          <button type="button" class="try-btn any-btn">TRY</button>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

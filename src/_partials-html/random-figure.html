@@ -1,0 +1,33 @@
+<li class="tasks__item">
+  <a href="./random-figure/random-figure.html" class="link-to-task"
+    ><p class="task_name">Random figure change</p></a
+  >
+  <div class="task_view">
+    <video width="320" height="200" class="task__video" controls>
+      <source src="./video/random-figure.mp4" type="video/mp4" />
+    </video>
+  </div>
+  <div class="task__info">
+    <p class="task_desc">
+      Спочатку на екрані користувача відображається фігура рандомної форми. При
+      натисканні на неї в рандомному порядку форма фігури змінюється на
+      іншу.Фігура щоразу з'являється у різних місцях на сторінці. Колір фігури в
+      рандомному порядку змінюється.
+    </p>
+    <p>
+      Для генерування випадкового кольору у hex-форматі використовується функція
+      randomColor()
+    </p>
+    <div class="random__code">
+      <span class="code">const randomColor = () => </span>
+      <span class="code">'#' + (Math.random().toString(16) + '000000')</span>
+      <span class="code">.substring(2, 8).toUpperCase();</span>
+    </div>
+    <p>Для генерування випадкового числа від 0 до max (НЕ включно)</p>
+    <div class="random__code">
+      <span class="code">function randomither(max) {</span>
+      <span class="code">return Math.floor(Math.random() * max);</span>
+      <span class="code">}</span>
+    </div>
+  </div>
+</li>

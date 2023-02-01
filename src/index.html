@@ -3,14 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>JavaScript Tasks</title>
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
   <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
     <!-- <include src="./partials/example.html"></include> -->
-    <a href="./form.html">Form</a>
-    <a href="./menu.html">Menu</a>
+    <div class="container">
+      <ul class="tasks">
+        <include src="_partials-html/useLocalStorageForm.html"></include>
+        <include src="_partials-html/useLocalStorageTheme.html"></include>
+        <include src="_partials-html/localStorageContactForm.html"></include>
+
+        <include src="_partials-html/notification.html"></include>
+        <include src="_partials-html/annoyingSubsription.html"></include>
+        <include src="_partials-html/stopWatch.html"></include>
+        <include src="_partials-html/countdownTimer.html"></include>
+        <include src="_partials-html/weather-in-city.html"></include>
+        <include src="_partials-html/search-images.html"></include>
+        <include
+          src="_partials-html/search-news-and-create-gallery.html"
+        ></include>
+        <include src="_partials-html/gallery-with-photos.html"></include>
+        <include
+          src="_partials-html/gallery-with-infinite-scroll.html"
+        ></include>
+        <include src="_partials-html/gallery-axios.html"></include>
+        <include src="_partials-html/color-picker.html"></include>
+        <include src="_partials-html/find-country.html"></include>
+        <include src="_partials-html/piano.html"></include>
+        <include src="_partials-html/flex-gallery-pannel.html"></include>
+        <include src="_partials-html/infiniteScroll-libs.html"></include>
+        <include
+          src="_partials-html/infinite-scroll-intersection-observer.html"
+        ></include>
+        <include src="_partials-html/find-city.html"></include>
+        <include src="_partials-html/tags.html"></include>
+        <include src="_partials-html/scroll.html"></include>
+        <include src="_partials-html/transactions.html"></include>
+        <include src="_partials-html/filter.html"></include>
+        <include src="_partials-html/random-cords-change.html"></include>
+        <include src="_partials-html/random-figure.html"></include>
+        <include src="_partials-html/todo-list.html"></include>
+        <include src="_partials-html/update-css-variables.html"></include>
+        <include src="_partials-html/lazysizes.html"></include>
+        <include src="_partials-html/promisesMethods.html"></include>
+
+        <li class="tasks__item">
+          <a href="./async-await/async-await.html" class="link-to-task"
+            ><p class="task_name">?async/await</p>
+            <div class="task_view"></div>
+            <div class="task__info"><p class="task_desc"></p></div>
+          </a>
+        </li>
+
+        <li class="tasks__item">
+          <a href="./axios/axios.html" class="link-to-task"
+            ><p class="task_name">Axios</p>
+            <div class="task_view"></div>
+            <div class="task__info"><p class="task_desc"></p></div>
+          </a>
+        </li>
+      </ul>
+    </div>
   </body>
 </html>
