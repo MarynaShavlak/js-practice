@@ -1,0 +1,2 @@
+!function(){var e=document.querySelector(".js-contact-form"),t={};!function(){try{var t=JSON.parse(localStorage.getItem("userData"));if(null===t)return;for(var a in t)e.elements[a].value=t[a]}catch(e){console.log(e)}}();e.addEventListener("change",(function(e){var a=e.target,r=a.name,n=a.value;t[r]=n,localStorage.setItem("userData",JSON.stringify(t))})),e.addEventListener("submit",(function(t){t.preventDefault(),e.reset(),localStorage.removeItem("userData")}))}();
+//# sourceMappingURL=contact-form.a994fa5b.js.map
